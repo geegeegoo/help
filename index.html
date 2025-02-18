@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>augh</title>
+<style>
+body {
+  background-image: url("https://files.catbox.moe/bench0.gif"); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Comic Sans with fallbacks */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}.message-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#yes-button {
+  background-color: black;
+  color: white;
+}
+
+#no-button {
+  background-color: black;
+  color: white;
+}
+</style>
+<script>
+function redirectTo(url) {
+  window.location.href = url;
+}
+</script>
+</head>
+<body>
+
+<div class="message-box">
+  <p>Are you sure you want to proceed? There's flashing light and shows your personal information locally.</p>
+  <button id="yes-button" onclick="redirectTo('https://geegeegoo.github.io/guesser/')">Yes</button>
+  <button id="no-button" onclick="redirectTo('https://geegeegoo.github.io/geegee/')">No</button>
+</div>
+
+</body>
+</html>
